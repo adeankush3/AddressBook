@@ -11,23 +11,25 @@ namespace AddressBook
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Address Book Program");
-            Create create = new Create();
+            Contacts contacts = new Contacts();
             Console.WriteLine("Enter First Name");
-            create.firstName=Console.ReadLine();
+            contacts.firstName=Console.ReadLine();
             Console.WriteLine("Enter Last Name");
-            create.lastName = Console.ReadLine();
+            contacts.lastName = Console.ReadLine();
             Console.WriteLine("Enter Email");
-            create.email = Console.ReadLine();
+            contacts.email = Console.ReadLine();
             Console.WriteLine("Enter Phone");
-            create.phone = Console.ReadLine();
+            contacts.phone = Console.ReadLine();
             Console.WriteLine("Enter Address");
-            create.Address = Console.ReadLine();
+            contacts.Address = Console.ReadLine();
             Console.WriteLine("Enter City");
-            create.City = Console.ReadLine();
+            contacts.City = Console.ReadLine();
             Console.WriteLine("Enter State");
-            create.state = Console.ReadLine();
+            contacts.state = Console.ReadLine();
             Console.WriteLine("Enter ZIP");
-            create.zip = Convert.ToInt32(Console.ReadLine());
+            contacts.zip = Convert.ToInt32(Console.ReadLine());
+            AddingContact add = new AddingContact();
+            add.CreateContact();
 
 
         }
